@@ -1,57 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="regina.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Regina portfolio.">
     <title>Regina Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            line-height: 1.6;
+            background-image: url(https://cdn.pixabay.com/photo/2022/06/12/22/48/gradient-7258997_1280.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        header {
+            background-color: rgba(99, 80, 124, 0.993);
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #e7ff91;
+        }
+
+        .section {
+            margin-top: 45px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            background-color: rgba(99, 80, 124, 0.993);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            text-align-last: center;  
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff5ae9;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            background-color: #e7ff91;
+            color: #000;
+            transform: scale(1.1);
+        }
+
+        .social-icons {
+            margin: 30px 0; 
+        }
+
+        .social-icons a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 3rem;
+            height: 3rem;
+            background-color: transparent;
+            border: 0.2rem solid #ffffff;
+            font-size: 2rem;
+            border-radius: 50%;
+            margin: 1.5rem;
+            transition: 0.3s ease;
+            color: #ffffff;
+        }
+
+        .social-icons a:hover {
+            color: black;
+            transform: scale(1.3) translateY(-5px);
+            background-color: #e7ff91;
+            box-shadow: 0  0 25px #fefefe;
+        }
+
+        footer {
+            background-color: rgba(99, 80, 124, 0.993);
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <a href="#" class="logo"></a>
 
+    <header>
         <nav>
-            <a href="#" class="active"> Home</a>
-            <a href="#" >About</a>
-            <a href="#" >Services</a>
-            <a href="#" >Porfolio</a>
-            <a href="#" >Experience</a>
-            <a href="#" >Contact Me</a>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </nav>
     </header>
-    <section class="home">
-        <div class="home-img">
-            <img src="./regina.jpg" alt="">  
-        </div>
-        <div class="home-content">
-            <center>
-            <h1>Hello, I'm <span>Regina</span></h1>
-            <h3 class="typing-text ">a <span></span></h3>
-            </center>
-            <p>
-                Hi, I'm Regina, a freelance web developer and UI designer dedicated to creating visually stunning and functional websites. 
-                I specialize in crafting responsive designs that captivate users and enhance their overall experience. <br><br>
-                With a strong focus on collaboration, I work closely with clients to understand their unique needs and bring their ideas to life. 
-                Together, we can create a website that elevates your brand and makes a lasting impression. Let’s connect and turn your vision into reality!
-            </p>
-            
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>Regina Co</h2>
+            <h4>Web Developer | UI Designer</h4><br>
+            <img src="regina.JPG" alt="Profile Picture of Regina" style="border-radius: 50%; width: 150px; height: 150px; margin-bottom: 20px;">
+            <br>
+            <p> Hi, I'm Regina, a freelance web developer and UI designer dedicated to creating visually stunning and functional websites. <br>
+                I specialize in crafting responsive designs that captivate users and enhance their overall experience. With a strong focus on collaboration, I work closely with clients to understand their unique needs and bring their ideas to life. 
+                Together, we can create a website that elevates your brand and makes a lasting impression. 
+                <br><br>
+                Let’s connect and turn your vision into reality!</p>
+
+            <!-- Social media icons moved above buttons -->
             <div class="social-icons">
-            <center>
                 <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="#"><i class="fa-brands fa-github"></i></a>
                 <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            </center>
             </div>
-
+                
             <center>
                 <a href="#" class="btn">Download CV</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="#" class="btn">Hire Me</a>
             </center>
         </div>
     </section>
+
+    <br>
+
+    <footer>
+        <p> © 2024 Regina Co | All Rights Reserved</p>
+    </footer>
 </body>
 </html>

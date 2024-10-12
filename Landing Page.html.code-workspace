@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Regina"
+		},
+		{
+			"path": "../Romero-Code"
+		},
+		{
+			"path": "../Cabading-Code"
+		},
+		{
+			"path": "../Capan-Code"
+		},
+		{
+			"path": "../Mariz"
+		}
+	],
+	"settings": {}
+}
